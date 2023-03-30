@@ -1,0 +1,39 @@
+{
+  "name": "p2p",
+  "version": "0.0.1",
+  "description": "A simple peer to peer crypto exchange",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "lint": "npx solhint --max-warnings 0 'contracts/**/*.sol'",
+    "node": "npx hardhat node",
+    "test": "MOCHA_REPORTER=spec npx hardhat test",
+    "test-json": "MOCHA_REPORTER=json npx hardhat test | sed -n '/^{$/,$p' > test-results.json",
+    "coverage": "npx hardhat coverage",
+    "deploy-local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy-fixtures": "npx hardhat fixtures --network localhost",
+    "deploy": "npx hardhat run scripts/deploy.js --network"
+  },
+  "keywords": [],
+  "author": "Rémy Baranx",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
+    "@nomicfoundation/solidity-analyzer": "^0.1.0",
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.0",
+    "hardhat": "^2.17.2",
+    "hardhat-abi-exporter": "^2.10.1",
+    "mocha": "^10.0.0",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.8.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "chai-string": "^1.5.0",
+    "hardhat-ethernal": "^3.2.3"
+  }
+}

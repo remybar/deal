@@ -1,0 +1,23 @@
+[
+  "constructor(uint256,uint256)",
+  "event LogDepositReceived(address)",
+  "event OfferCreated(uint32)",
+  "event OfferRemoved(uint32)",
+  "event OwnershipTransferred(address indexed,address indexed)",
+  "function buyOffer(uint32) payable",
+  "function cancelOffer(uint32)",
+  "function createOffer(address,uint256,address,uint256) payable",
+  "function createReservedOffer(address,uint256,address,uint256,address) payable",
+  "function editOffer(uint32,uint256,address,uint256)",
+  "function editReservedOffer(uint32,uint256,address,uint256,address)",
+  "function getOffer(uint32) view returns (tuple(uint32,address,address,uint256,address,uint256,address))",
+  "function getOffers() view returns (tuple(uint32,address,address,uint256,address,uint256,address)[])",
+  "function makerFees() view returns (uint256)",
+  "function owner() view returns (address)",
+  "function renounceOwnership()",
+  "function setMakerFees(uint256)",
+  "function setTakerFees(uint256)",
+  "function takerFees() view returns (uint256)",
+  "function transferOwnership(address)",
+  "function withdraw(uint256)"
+]
