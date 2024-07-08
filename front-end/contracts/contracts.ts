@@ -34,6 +34,13 @@ export const contracts: Record<number, Contract> = {
     networkName: 'Localhost',
     contract: '0x5FbDB2315678afecb367f032d93F642f64180aa3'
   },
+  1802203764: {
+    chainId: 1802203764,
+    tokenExplorerUrl: 'https://sepolia.kakarotscan.org/token/<ADDRESS>',
+    addressExplorerUrl: 'https://sepolia.kakarotscan.org/address/<ADDRESS>',
+    networkName: 'Kakarot',
+    contract: '0xD83dE81E22cF06dFc9CC2ca7Dd664b5Ee2bf6e6A'
+  },
   // generated content :: DO NOT MODIFIED :: END
 };
 

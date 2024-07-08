@@ -74,6 +74,13 @@ module.exports = {
       accounts: [process.env.SEPOLIA_PRIVATE_KEY],
       chainId: 11155111,
     },
+    kakarot: {
+      url: `https://sepolia-rpc.kakarot.org`,
+      tokenExplorerUrl: "https://sepolia.kakarotscan.org/token/<ADDRESS>",
+      addressExplorerUrl: "https://sepolia.kakarotscan.org/address/<ADDRESS>",
+      accounts: [process.env.KAKAROT_PRIVATE_KEY],
+      chainId: 1802203764,
+    },
   },
 
   frontEnd: {
